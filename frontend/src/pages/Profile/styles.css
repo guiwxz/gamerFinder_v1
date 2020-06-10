@@ -1,0 +1,193 @@
+.profile-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.profile-container .menu{
+    width: 250px;
+    height: 95.7%;
+    background: linear-gradient(to top left, #a3a3fa, transparent);
+    box-shadow: 0 100px 100px rgba(00, 00, 00, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    position: fixed;
+    z-index: 2;
+}
+
+.profile-container .menu img{
+    height: 190px;
+    width: 230px;
+    margin: 60px auto 70px auto;
+}
+
+.profile-container .menu .menu-buttons{
+    border-radius: 0;
+    border: none;
+    border-top: 3px solid #4a53b5;
+    border-bottom: 3px solid #4a53b5;
+    transition: filter 0.2s;
+    color: #4a53b5;
+}
+.profile-container .menu .menu-buttons+.menu-buttons{
+    border-top: 0
+}
+
+.profile-container .menu .menu-buttons:hover {
+    filter: brightness(60%); /* quando passa o mouse em cima do botao ele escurece em 80% */
+}
+
+.profile-container .menu .logout-button{
+    width: 100%;
+    border-radius: 0;
+    background-color: #4a53b5;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+
+/*  ******** CONTENT **********/
+
+.profile-container .content{
+    width: 850px;
+    padding: 20px 0 0;
+    background-color: #f0f0f5;
+    background-color: #ddd;
+
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-left: 270px;
+}
+
+.profile-container .content .user, .connections, .games{
+    background-color: #f0f0f5;
+    box-shadow: 0 0 100px rgba(00, 00, 00, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.profile-container .content .user{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile-container .content .user h1{
+    margin: 5px auto;
+    letter-spacing: 1px;
+}
+
+.profile-container .content .user img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    border: 5px solid #4a53b5;
+}
+
+.profile-container .content .user h3{
+    color: #777;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+.profile-container .content .connections h2{
+    color: #4a53b5;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.profile-container .content .connections .connections-buttons{
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+ /*    grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 60px;
+}
+.connections-buttons button{
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    border: 2px solid #4a53b5; 
+    background: linear-gradient(to top left, #a3a3fa, transparent);
+    border-radius: 25px;
+
+    color: #222;
+    font-weight: bold;
+    font-size: 14px;
+    transition: border-color 0.5s;
+    transition: filter 0.5s;
+}
+
+.connections-buttons button:hover{ 
+    border-color: #222;
+    filter: brightness(60%);
+}
+
+.profile-container .content .games .games-buttons{
+    margin: 40px auto;
+    margin-left: 15vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 60px;
+}
+
+.profile-container .content .games h2{
+    color: #4a53b5;
+    width: 100%;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px){
+    .profile-container{
+        max-width: 1000px;
+    }
+    
+    .profile-container .menu{
+        width: 220px;
+        margin-left: 20px;
+    }
+
+    .profile-container .content{
+        margin-left: 260px;
+    }
+
+    .profile-container .menu img{
+        height: 165px;
+        width: 195px;
+        margin: 40px auto 60px auto;
+    }
+
+    .profile-container .menu .logout{
+        border-radius: 0;
+        background-color: #4a53b5;
+        height: 40px;
+        margin-top: 290px;
+    }
+
+    .profile-container .content img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+
+}

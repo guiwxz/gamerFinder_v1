@@ -1,0 +1,118 @@
+.register-container{
+    width: 100%;
+    max-width: 1300px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container .content{
+    width: 100%;
+    padding: 96px; 
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-container .content section{
+    width: 100%;
+    max-width: 450px;
+}
+
+.register-container .content section h1{
+    margin: 0 0 12px;
+    font-size: 32px;
+}
+
+.register-container .content img {
+    width: 45vh;
+    height: 40vh;
+}
+
+.register-container .content section p {
+    font-size: 17px;
+    color: #737380;
+    line-height: 32px;
+}
+
+.register-container .content form {
+    width: 100%;
+    margin-top: 40px
+}
+
+.register-container .content .textField{
+    width: 100%;
+    margin-bottom: 10px; 
+
+}
+.container input {
+    height: 36px;
+    padding: 0px 14px;
+}
+
+.register-container .content .button{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.register-container .login{
+    text-decoration: none;
+    color: #16208c;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+    width: 150px;
+}
+.login svg{
+    margin-right: 8px;
+}
+.login:hover{
+    opacity: 0.8;
+}
+
+
+
+
+@media only screen and (max-width: 1400px){
+    .register-container{
+        max-width: 1120px;
+    }
+    .register-container .content{
+        width: 100%;
+        padding: 70px 96px; 
+    }
+    .register-container .content img{
+        width: 60vh;
+        height: 55vh;
+    }
+    .register-container .content section{
+        width: 100%;
+        max-width: 350px;
+    }
+    .register-container .content section p {
+        line-height: 24px;
+    }
+    .register-container .content form {
+        width: 100%;
+        margin-top: 15px
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .register-container .content{
+        display: block;
+        
+    }
+}
